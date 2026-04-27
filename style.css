@@ -60,7 +60,7 @@ a {
 }
 
 .wrapper {
-
+	position:relative;
 }
 
 .wrapper .food-wrapper {
@@ -120,4 +120,18 @@ a {
 
 .wrapper .food-wrapper li:hover .food-wrap h3 {
 	color:orange;
+}
+
+.wrapper .about-section {
+	position: absolute;
+	left:0;
+	top:0;
+	background-image: url('images/bg.png');
+	height: 500px;
+}
+
+.wrapper .about-section .about-gnb {
+	background-color: rgba(0,0,0,0.85);
+	margin: 30px;
+	padding: 30px;
 }
