@@ -44,3 +44,80 @@ a {
 
 	8. 클릭하면 나오게 해주세요.
 */
+
+#section {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.header {}
+.header .logo {
+	display:inline-block;
+	font-size:60px;
+	font-weight: 700;
+	border-bottom:5px solid #666;
+	margin: 20px 0;
+}
+
+.wrapper {
+
+}
+
+.wrapper .food-wrapper {
+	display: flex;
+}
+
+.wrapper .food-wrapper li {
+	position: relative;
+	width: 33.3334%;
+	height: 500px;
+	opacity: 0.5;
+	/* display: flex;
+	align-items: flex-end; */
+	background-position: center;
+	transition: all 1s;
+}
+
+.wrapper .food-wrapper:hover li {
+	width:25%;
+}
+
+.wrapper .food-wrapper li:hover {
+	width:50%;
+	opacity: 1;
+}
+
+.wrapper .food-wrapper li.cookie {
+	background-image: url('images/bg-cookie.png');
+}
+.wrapper .food-wrapper li.cake {
+	background-image: url('images/bg-cake.png');
+}
+.wrapper .food-wrapper li.crepe {
+	background-image: url('images/bg-crepe.png');
+}
+
+.wrapper .food-wrapper li .food-wrap {
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	margin: auto;
+	background-color: rgba(0,0,0,0.85);
+	margin: 20px;
+	padding: 15px;
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+.wrapper .food-wrapper li .food-wrap h3 {
+	margin-bottom: 20px;
+}
+
+.wrapper .food-wrapper li .food-wrap p {
+	width: 400px;
+}
+
+.wrapper .food-wrapper li:hover .food-wrap h3 {
+	color:orange;
+}
